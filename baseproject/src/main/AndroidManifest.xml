@@ -1,3 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.uits.baseproject" />
+    package="com.uits.baseproject" >
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+    </application>
+
+</manifest>
 
