@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'android'
+    bintrayName = 'permissions'
+
+    publishedGroupId = 'com.uits.android'
+    libraryName = 'permissions'
+    artifact = 'permissions'
+
+    libraryDescription = 'Library for easy handling of runtime permissions in android.'
+
+    siteUrl = 'https://github.com/phuquy2114/Permission_android'
+    gitUrl = 'https://github.com/phuquy2114/Permission_android.git'
+
+    libraryVersion = '3.8'
+
+    developerId = 'phuquy2114'
+    developerName = 'Do Phu Quy'
+    developerEmail = 'phuquycntt@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.uits.permission"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
