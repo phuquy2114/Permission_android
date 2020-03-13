@@ -1,2 +1,3 @@
 rootProject.name='Permission_android'
 include ':app'
+include ':baseproject'

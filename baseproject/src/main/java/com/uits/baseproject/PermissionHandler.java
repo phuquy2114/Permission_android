@@ -1,4 +1,4 @@
-package com.uits.permission;
+package com.uits.baseproject;
 
 import android.content.Context;
 import android.widget.Toast;
